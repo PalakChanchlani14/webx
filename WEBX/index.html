@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-XXXXXXXXXX');
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Website</h1>
+        <nav>
+            <a href="index.html" onclick="trackClick('Home Page Clicked')">Home</a>
+            <a href="about.html" onclick="trackClick('About Page Clicked')">About</a>
+            <a href="contact.html" onclick="trackClick('Contact Page Clicked')">Contact</a>
+        </nav>
+    </header>
+
+    <section>
+        <h2>Explore the Features</h2>
+        <button onclick="trackClick('Home Button Clicked')">Click Me</button>
+    </section>
+    <section>
+        <h2>Explore the Features</h2>
+        <button onclick="showMessage()">Click Me</button>
+        <p id="message"></p> <!-- Yahan message show hoga -->
+    </section>
+    
+    <script src="script.js"></script>
+</body>
+</html>
